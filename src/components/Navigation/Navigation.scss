@@ -1,1 +1,17 @@
 @import '../../css/Config.scss';
+
+.navigation {
+  padding: 20px 0;
+  background-color: $color--secondary;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+
+  &__logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    > a {
+      display: block;
+    }
+  }
+}

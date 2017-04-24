@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import './ScrapeInfo.css'
+import './Grid.css'
+import UserInfo from '../../components/UserInfo/UserInfo'
 
-class ScrapeInfo extends Component {
+class Grid extends Component {
 
   scrapeInfo() {
 
@@ -18,21 +19,6 @@ class ScrapeInfo extends Component {
           return tracks.map(function(track) {
             console.log(track.name)
           })
-      })
-    }
-
-    function getUserInfo() {
-      fetch(apiLink +'?method=user.getInfo&user='+ userName +'&api_key='+ key +'&format=json')
-        .then( response => response.json() )
-        .then(function(data) {
-          let user = data.user
-          
-          console.log('Username: ' + user.name)
-          console.log('Real name: ' + user.realname)
-          console.log('Location: ' + user.country)
-          console.log('Scrobbles: ' + user.playcount)
-          console.log('Avatar: ' + user.image[3]["#text"])
-          console.log('URL: ' + user.url)
       })
     }
 
@@ -60,7 +46,6 @@ class ScrapeInfo extends Component {
 
     function run() {
       getRecent()
-      getUserInfo()
       getTopTracks()
     }
 
@@ -68,19 +53,24 @@ class ScrapeInfo extends Component {
   }
 
   componentDidMount() {
-    this.scrapeInfo()
+    // this.scrapeInfo()
   }
 
   render() {
 
     return (
       <div className="wrapper">
-        <main>
-          <ul></ul>
-        </main>
+        <ul className="grid">
+          <li><UserInfo /></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
       </div>
     )
   }
 }
 
-export default ScrapeInfo
+export default Grid

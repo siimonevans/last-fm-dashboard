@@ -1,0 +1,31 @@
+@import '../../css/Config.scss';
+
+.user-info {
+
+  div {
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-align: center;
+    color: #D5D7DB;
+  }
+
+  &__avatar {
+    > img {
+      width: 70px;
+      height: 70px;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+    }
+  }
+
+  &__realname {
+    font-weight: 100;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  &__url {
+    text-align: center;
+  }
+}

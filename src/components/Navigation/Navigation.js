@@ -5,11 +5,13 @@ import './Navigation.css'
 class Navigation extends Component {
   render() {
     return (
-      <div className="navigation">
-        <Link to='/'>
-          Home (navigation link)
-        </Link>
-      </div>
+      <nav className="navigation">
+        <div className="wrapper">
+          <div className="navigation__logo">
+            <Link to='/'></Link>
+          </div>
+        </div>
+      </nav>
     )
   }
 }
