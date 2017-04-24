@@ -1,0 +1,43 @@
+@import './Config.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: $color--primary;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  animation: fadeIn 1000ms;
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  font-weight: 100;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 50px 0;
+  font-family: "Quicksand", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+  background-color: $color--primary;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
