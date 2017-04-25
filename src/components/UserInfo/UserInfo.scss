@@ -1,10 +1,10 @@
 @import '../../css/Config.scss';
 
 .user-info {
-
+  padding: 0 50px;
+  
   div {
     margin-bottom: 5px;
-    font-size: 14px;
     text-align: center;
     color: #D5D7DB;
   }
@@ -15,11 +15,12 @@
       height: 70px;
       display: block;
       margin: 0 auto;
-      border-radius: 10px;
+      border-radius: 50%;
     }
   }
 
   &__realname {
+    margin: 20px 0 10px;
     font-weight: 100;
     text-align: center;
     font-size: 25px;
@@ -27,5 +28,12 @@
 
   &__url {
     text-align: center;
+  }
+
+  &__country {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 12px;
   }
 }
