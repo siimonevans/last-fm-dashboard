@@ -2,12 +2,38 @@
 
 .grid {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 30px;
+
+  &__heading {
+    background-color: #232B41;
+    padding: 13px 20px;
+    margin-bottom: 20px;
+    color: #828793;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 7px 7px 0 0;
+
+    &--white {
+      background-color: transparent;
+      color: #fff;
+    }
+  }
+
+  &__inner {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  a {
+    color: #d8d9dc;
+  }
 
   li {
-    min-height: 250px;
-    padding: 30px 20px;
-    background-color: #222A41;
+    min-height: 220px;
+    background-color: #1F273D;
+    border-radius: 7px;
   }
 
   li:nth-child(1) {
@@ -19,27 +45,25 @@
     grid-column: 2 / 6;
     grid-row: row;
     padding-bottom: 0;
-    padding-top: 50px;
   }
 
   li:nth-child(3) {
     grid-column: 6 / 10;
     grid-row: row;
     padding-bottom: 0;
-    padding-top: 50px;
+    background-image: linear-gradient(145deg, #FC2A84, #ab1d30);
   }
 
   li:nth-child(4) {
     grid-column: 2 / 5;
     grid-row: row 2;
-    background-image: linear-gradient(145deg, #F93850, #ab1d30);
+    background-image: linear-gradient(145deg, #2ae9fc, #1dab91);
   }
 
   li:nth-child(5) {
     grid-column: 5 / 10;
     grid-row: row 2;
     padding-bottom: 0;
-    padding-top: 50px;
   }
 
   li:nth-child(6) {

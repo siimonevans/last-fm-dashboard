@@ -15,13 +15,11 @@ class TopAlbums extends Component {
 
           let TopAlbums = data.topalbums.album
 
-          console.log(TopAlbums)
-
           return TopAlbums.map(function(album) {
             let name   = album.name;
             let albumUrl = album.url;
 
-            const albumHTML = document.querySelector('.top-albums')
+            const albumHTML = document.querySelector('.top-albums__inner')
             albumHTML.innerHTML += '<a href="' + albumUrl +'" class="top-albums__album"><div>' + name + '</div></a>'
           })
       })
@@ -33,7 +31,10 @@ class TopAlbums extends Component {
 
   render() {
     return (
-      <div className="top-albums"></div>
+      <div className="top-albums">
+        <div className="grid__heading top-albums__heading">Top Albums</div>
+        <div className="grid__inner top-albums__inner"></div>
+      </div>
     )
   }
 }

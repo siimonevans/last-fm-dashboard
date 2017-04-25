@@ -16,10 +16,10 @@ class TopTracks extends Component {
           let topTracks = data.toptracks.track
 
           return topTracks.map(function(track) {
-            let name   = track.name;
-            let trackUrl = track.url;
+            let name   = track.name
+            let trackUrl = track.url
 
-            const trackHTML = document.querySelector('.top-tracks')
+            const trackHTML = document.querySelector('.top-tracks__inner')
             trackHTML.innerHTML += '<a href="' + trackUrl +'" class="top-tracks__track"><div>' + name + '</div></a>'
 
           })
@@ -32,7 +32,10 @@ class TopTracks extends Component {
 
   render() {
     return (
-      <div className="top-tracks"></div>
+      <div className="top-tracks">
+        <div className="grid__heading top-tracks__heading">Top Tracks</div>
+        <div className="grid__inner top-tracks__inner"></div>
+      </div>
     )
   }
 }

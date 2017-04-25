@@ -19,7 +19,7 @@ class TopArtists extends Component {
             let name   = artist.name;
             let artistUrl = artist.url;
 
-            const artistHTML = document.querySelector('.top-artists')
+            const artistHTML = document.querySelector('.top-artists__inner')
             artistHTML.innerHTML += '<a href="' + artistUrl +'" class="top-artists__artist"><div>' + name + '</div></a>'
           })
       })
@@ -31,7 +31,10 @@ class TopArtists extends Component {
 
   render() {
     return (
-      <div className="top-artists"></div>
+      <div className="top-artists">
+        <div className="grid__heading top-artists__heading">Top Artists</div>
+        <div className="grid__inner top-artists__inner"></div>
+      </div>
     )
   }
 }

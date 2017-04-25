@@ -27,7 +27,7 @@ class Scrobbles extends Component {
     return (
       <div className="scrobbles">
         <span className="scrobbles__value"></span>
-        <span className="scrobbles__label">Scrobbles</span>
+        <span className="scrobbles__label">Total scrobbles</span>
       </div>
     )
   }

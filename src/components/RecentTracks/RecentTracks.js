@@ -19,7 +19,7 @@ class RecentTracks extends Component {
             let name   = track.name;
             let trackUrl = track.url;
 
-            const trackHTML = document.querySelector('.recent-tracks')
+            const trackHTML = document.querySelector('.recent-tracks__inner')
             trackHTML.innerHTML += '<a href="' + trackUrl +'" class="recent-tracks__track"><div>' + name + '</div></a>'
 
           })
@@ -32,7 +32,10 @@ class RecentTracks extends Component {
 
   render() {
     return (
-      <div className="recent-tracks"></div>
+      <div className="recent-tracks">
+        <div className="grid__heading recent-tracks__heading">Recent Tracks</div>
+        <div className="grid__inner recent-tracks__inner"></div>
+      </div>
     )
   }
 }
