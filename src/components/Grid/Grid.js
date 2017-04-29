@@ -14,11 +14,11 @@ class Grid extends Component {
       <div className="wrapper">
         <ul className="grid">
           <li><UserInfo /></li>
-          <li><TopTracks /></li>
+          <li><TopArtists /></li>
           <li><MostPlayed /></li>
           <li><Scrobbles /></li>
           <li><TopAlbums /></li>
-          <li><TopArtists /></li>
+          <li><TopTracks /></li>
           <li><RecentTracks /></li>
         </ul>
       </div>
