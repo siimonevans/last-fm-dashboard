@@ -3,18 +3,16 @@
 .grid {
   display: grid;
   grid-gap: 30px;
-  margin-bottom: 20px;
 
   &__heading {
-    background-color: #232B41;
+    background-color: #1e252f;
     padding: 13px 20px;
     margin-bottom: 20px;
-    color: #828793;
+    color: #9da2ad;
     text-transform: uppercase;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 1px;
-    border-radius: 7px 7px 0 0;
 
     &--white {
       background-color: transparent;
@@ -32,9 +30,8 @@
   }
 
   li {
-    min-height: 220px;
-    background-color: #1F273D;
-    border-radius: 7px;
+    min-height: 235px;
+    background-color: $color--secondary;
   }
 
   li:nth-child(1) {
@@ -56,24 +53,24 @@
   }
 
   li:nth-child(4) {
-    grid-column: 2 / 5;
+    grid-column: 2 / 4;
     grid-row: row 2;
     background-image: linear-gradient(145deg, #2ae9fc, #1dab91);
   }
 
   li:nth-child(5) {
-    grid-column: 5 / 10;
+    grid-column: 4 / 10;
     grid-row: row 2;
     padding-bottom: 0;
   }
 
   li:nth-child(6) {
-    grid-column: 2 / 5;
+    grid-column: 2 / 4;
     grid-row: row 3;
   }
 
   li:nth-child(7) {
-    grid-column: 5 / 10;
+    grid-column: 4 / 10;
     grid-row: row 3;
     padding-bottom: 0;
     background-image: linear-gradient(145deg, #c82afc, #471dab);

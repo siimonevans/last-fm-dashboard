@@ -14,15 +14,16 @@ class UserInfo extends Component {
       .then(function(data) {
 
         let user = data.user
-        const realnameContainer = document.querySelector('.user-info__realname')
-        const countryContainer = document.querySelector('.user-info__country')
+
         const avatarContainer = document.querySelector('.user-info__avatar')
-        const userUrlContainer = document.querySelector('.user-info__url')
+        const realnameContainer = document.querySelector('.user-info__realname')
+        const usernameContainer = document.querySelector('.user-info__username span')
+        const countryContainer = document.querySelector('.user-info__country span')
 
         avatarContainer.innerHTML += '<img src="' + user.image[3]["#text"] + '">'
         realnameContainer.innerHTML += user.realname
+        usernameContainer.innerHTML += user.name
         countryContainer.innerHTML += user.country
-        // userUrlContainer.innerHTML += '<a href="' + user.url + '">' + user.realname + '</a>'
     })
   }
 
@@ -35,8 +36,8 @@ class UserInfo extends Component {
       <div className="user-info">
         <div className="user-info__avatar"></div>
         <h1 className="user-info__realname"></h1>
-        <div className="user-info__country"></div>
-        <div className="user-info__url"></div>
+        <div className="user-info__username">username: <span></span></div>
+        <div className="user-info__country">location: <span></span></div>
       </div>
     )
   }

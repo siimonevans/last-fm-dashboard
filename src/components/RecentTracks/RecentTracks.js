@@ -9,7 +9,7 @@ class RecentTracks extends Component {
         userName = 'TheSimonEvans',
         apiLink  = 'http://ws.audioscrobbler.com/2.0/';
 
-    fetch(apiLink +'?method=user.getRecentTracks&user='+ userName +'&api_key='+ key +'&format=json&limit=10')
+    fetch(apiLink +'?method=user.getRecentTracks&user='+ userName +'&api_key='+ key +'&format=json&limit=12')
         .then( response => response.json() )
         .then(function(data) {
 
