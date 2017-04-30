@@ -6,7 +6,7 @@ class RecentTracks extends Component {
   getRecentTracks() {
 
     let key      = '168bcdd68b93bc37ed26d3670c203322',
-        userName = 'TheSimonEvans',
+        userName = 'LAST.HQ',
         apiLink  = 'http://ws.audioscrobbler.com/2.0/';
 
     fetch(apiLink +'?method=user.getRecentTracks&user='+ userName +'&api_key='+ key +'&format=json&limit=12')
